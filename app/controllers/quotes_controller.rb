@@ -5,7 +5,7 @@ end
 
 def new
   @quote = Quote.new
-  end
+end
 
 
   def create
@@ -16,6 +16,9 @@ def new
     redirect_to root_path
   end
 
+  def about
+    end
+
 
   private
 
@@ -23,6 +26,5 @@ def new
   def quote_params
     params.require(:quote).permit(:saying, :author)
   end
-
 end
 
